@@ -1,0 +1,14 @@
+{
+    "name": "jadu/twig-attribute-parser",
+    "description": "Takes an array of attributes to be converted into HTML formatted attributes ready for use in an HTML element.",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {
+            "Jadu\\Pulsar": "src"
+        }
+    },
+    "require": {
+        "twig/twig": "^2.0",
+        "jadu/twig-array-extension": "^1.0"
+    }
+}
