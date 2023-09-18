@@ -36,7 +36,7 @@ Boolean attribute values will output the key only. The `disabled` boolean attrib
 
 ## Disabled attribute
 
-The `disabled` attribute is only valid on specific elements, if you attempt to pass a boolean `disabled` attribute without a valid `tag` or to a tag which doesn’t support the disabled attribute, it will output a disabled class instead.
+The `disabled` attribute is only valid on specific elements, if you attempt to pass a boolean `disabled` attribute without a valid `tag` or to a tag which doesn’t support the disabled attribute, it will output an `is-disabled` class instead which you can style appropriately.
 
 ```twig
 {%
@@ -45,7 +45,7 @@ The `disabled` attribute is only valid on specific elements, if you attempt to p
 
 <span{{ attributes(arrayToProcess) }} />
 
-{# output: <span class="disabled" /> #}
+{# output: <span class="is-disabled" /> #}
 ```
 
 If a `class` attribute is also present, the class list will be merged appropriately. If the `class` list also contains `is-disabled` it will not be duplicated.
@@ -57,7 +57,7 @@ If a `class` attribute is also present, the class list will be merged appropriat
 
 <span{{ attributes(arrayToProcess) }} />
 
-{# output: <span class="foo disabled" /> #}
+{# output: <span class="foo is-disabled" /> #}
 ```
 
 If `tag` is `button`, `fieldset`, `input`, `option`, `select`, `textarea` or `div`, it will output the disabled attribute.
