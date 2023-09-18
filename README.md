@@ -31,7 +31,7 @@ Boolean attribute values will output the key only. The `disabled` boolean attrib
 
 <span{{ attributes(arrayToProcess) }} />
 
-{# output: <span foo> #}
+{# output: <span foo /> #}
 ```
 
 ## Disabled attribute
