@@ -6,8 +6,6 @@ The optional `tag` attribute will also generate the required HTML element and is
 
 Output will always begin with an empty space to avoid unwanted spaces if no attributes are passed to the markup.
 
-
-
 ## Example
 
 ```twig
@@ -118,4 +116,3 @@ Empty values will be removed, if you want to display only the key, use a boolean
 ## Nested/multidimensional arrays
 
 Not supported.
-
